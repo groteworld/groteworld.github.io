@@ -1,3 +1,9 @@
+# Astro
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# macOS
 .DS_Store
-_site
-.sass_cache/

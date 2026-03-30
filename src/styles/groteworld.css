@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2F2B2F;
+}
+
+.video-frame {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.the-whole-thing {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    text-shadow: -2px 2px rgba(0,0,0,.5);
+}
+
+.who-am-i {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 92px;
+    color: Whitesmoke;
+    text-align: center;
+    cursor: default;
+}
+
+.who-am-i:hover::after {
+    content: "world";
+    color: #5fecd8;
+    position: absolute;
+    left: 50%;
+    pointer-events: none;
+    cursor: default;
+}
+
+.contacting-me {
+    margin-top: -141px;
+    padding-left: 46px;
+}
+
+.contacting-me i,
+.contacting-me i:visited {
+    color: Whitesmoke;
+    font-size: 30px;
+    padding: 0;
+    margin: 0 1px;
+}
+
+.contacting-me i:hover,
+.contacting-me i:visited:hover {
+    text-shadow: 0 0 rgba(0,0,0,.5);
+    color: #5fecd8;
+}
+
+.error {
+    color: Whitesmoke;
+    text-align: center;
+}
+
+.error a {
+    color: Whitesmoke;
+    text-decoration: underline;
+}
+
+.error a:hover {
+    color: #5fecd8;
+}
+
+.mute-btn {
+    font-size: 30px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 60px;
+    color: white;
+}
+
+.games-dropdown {
+    position: fixed;
+    bottom: -141px;
+    right: 20px;
+    text-shadow: 0 0 rgba(0,0,0,.5);
+    list-style-type: none;
+    transition: bottom .66s;
+}
+
+.games-dropdown:hover {
+    bottom: 0;
+}
+
+.games-dropdown .games-title {
+    font-weight: bold;
+    color: #5fecd8;
+    font-size: 18px;
+    padding: 5px;
+    border-bottom: 1px solid #5fecd8;
+    text-align: right;
+    cursor: default;
+}
+
+.games-dropdown .game {
+    padding: 5px;
+}
+
+.games-dropdown .game a {
+    color: Whitesmoke;
+    text-decoration: none;
+}
+
+.games-dropdown .game a:hover {
+    text-decoration: underline;
+}
+
+::selection {
+    background: transparent;
+}
+
+::-moz-selection {
+    background: transparent;
+}

@@ -1,0 +1,31 @@
+---
+import '../styles/groteworld.css';
+
+const { title = "@groteworld" } = Astro.props;
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Developer, Academic, Humanist | Based in Mankato, MN">
+    <meta name="keywords" content="freelance,developer,open source,academic,mankato,minnesota,software,contractor,foxio">
+    <meta name="author" content="@groteworld">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=2.0, width=device-width" />
+    <title>{title}</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/touch.png">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35978739-1"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-35978739-1');
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
